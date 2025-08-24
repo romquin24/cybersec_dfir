@@ -26,4 +26,14 @@ add-DnsServerResourceRecord -zonename ngcpM.ph -A -name ap  -ipv4address 10.m.10
 ﻿Install-WindowsFeature  -name Web-Server  -includeManagementTools
 New-Website -name "ngcpM.ph" -hostheader "www.ngcpM.ph" -physicalpath "d:\webs\datingbiz"
 #
+﻿#Add-DnsServerForwarder -ipAddress 10.11.1.10, 10.12.1.10, 10.21.1.10, 10.22.1.10, 10.31.1.10, 10.32.1.10, 10.41.1.10, 10.42.1.10,10.51.1.10, 10.52.1.10, 10.61.1.10, 10.62.1.10 -PassThru
+
+
+Remove-DnsServerForwarder -ipAddress 10.11.1.10, 10.12.1.10, 10.21.1.10, 10.22.1.10, 10.31.1.10, 10.32.1.10, 10.41.1.10, 10.42.1.10,10.51.1.10, 10.52.1.10, 10.61.1.10, 10.62.1.10 -PassThru
+#
+#
+﻿Start-DnsServerZoneTransfer -name "ngcp12.ph" -FullTransfer
+#Add-DnsServerSecondaryZone -name "ngcpK.ph" -ZoneFile "ngcpK.ph.dns" -MasterServers 10.k.1.10
+#
+#
 
