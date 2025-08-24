@@ -20,4 +20,10 @@ add-DnsServerResourceRecord -zonename ngcpM.ph -A -name c1  -ipv4address 10.m.50
 add-DnsServerResourceRecord -zonename ngcpM.ph -A -name c2  -ipv4address 10.m.50.8
 
 add-DnsServerResourceRecord -zonename ngcpM.ph -A -name ap  -ipv4address 10.m.10.3
+#
+#
+#
+﻿Install-WindowsFeature  -name Web-Server  -includeManagementTools
+New-Website -name "ngcpM.ph" -hostheader "www.ngcpM.ph" -physicalpath "d:\webs\datingbiz"
+#
 
