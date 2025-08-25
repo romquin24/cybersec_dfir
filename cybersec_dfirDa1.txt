@@ -129,6 +129,137 @@ Skills: Leadership, governance, threat intelligence, legal/compliance knowledge,
 Service Level Agreements (SLAs) are critical for maintaining efficiency, accountability, and compliance. Below are the Top 5 essential SOC SLAs commonly documented and enforced in top-tier SOC environments, along with brief descriptions:
 Cybersecurity Operations Center (SOC), SLAs (Service Level Agreements) are critical to ensure consistent, timely, and measurable security response. Below are the Top 5 essential SLAs in a modern SOC, along with their most common time parameters (in minutes) for metrics such as MTTR, MTTD, etc.
 
+Top 5 SOC SLAs (Commonly Used Terms)
+1. Incident Response SLA
+
+Definition: Time to respond to a critical incident.
+
+Target: Response within 15 minutes of detection.
+
+2. Containment SLA
+
+Definition: Time to contain a confirmed security breach.
+
+Target: Contain within 1 hour.
+
+3. Eradication SLA
+
+Definition: Time to remove threat completely from systems.
+
+Target: Complete within 4 hours.
+
+4. Recovery SLA
+
+Definition: Time to restore systems to full operational status.
+
+Target: Full recovery within 24 hours.
+
+5. Communication SLA
+
+Definition: Time to notify stakeholders of an incident.
+
+Target: Notify within 30 minutes of detection.
+
+4. Step-by-Step Lab Instructions
+
+Step 1: Log in as SOC Manager
+
+Go to Admin Panel → ITSM Configuration Management → Service Level Agreements (SLA).
+Step 2: Create Incident Response SLA
+Click Add SLA.
+Name: Incident Response SLA
+Calendar: 24x7 (or create one for SOC hours).
+
+First Response Time: 15 minutes
+
+Update Time: 30 minutes
+
+Solution Time: 4 hours
+
+Click Save.
+
+Step 3: Create Containment SLA
+
+Same as above, but set:
+
+Name: Containment SLA
+
+Solution Time: 1 hour
+
+Step 4: Create Eradication SLA
+
+Name: Eradication SLA
+
+Solution Time: 4 hours
+
+Step 5: Create Recovery SLA
+
+Name: Recovery SLA
+
+Solution Time: 24 hours
+
+Step 6: Create Communication SLA
+
+Name: Communication SLA
+
+First Response: 30 minutes
+
+Solution Time: 2 hours
+
+Step 7: Link SLAs to Services
+
+Go to Admin Panel → ITSM Configuration Management → Services.
+
+Create services:
+
+Incident Handling
+
+Threat Containment
+
+Threat Eradication
+
+System Recovery
+
+Incident Communication
+
+Link each SLA to its corresponding service.
+
+Step 8: Test SLA Application
+
+Create a new Incident Ticket.
+
+Assign it to Incident Handling service.
+
+Observe SLA countdown timers in ticket view.
+
+Simulate breach of SLA (delay response) to see escalation alert.
+
+5. Deliverables
+
+Students must:
+
+Configure all 5 SLAs.
+
+Demonstrate SLA breach escalation.
+
+Export SLA configuration report.
+
+Assessment: Pass if all SLAs are working with proper escalation.
+
+6. Best Practices
+
+Always use 24x7 calendars for SOC.
+
+Align SLAs with NIST IR lifecycle (Preparation, Detection, Containment, Eradication, Recovery).
+
+Use clear escalation rules:
+
+1st level → SOC Lead.
+
+2nd level → SOC Manager.
+
+3rd level → CISO.
+
 🔹 1. MTTD – Mean Time to Detect
 Description: The average time it takes from the occurrence of a security event to its detection by the SOC.
 Purpose: Measures how fast threats are identified by the monitoring systems (SIEM, EDR, IDS).
@@ -227,6 +358,7 @@ Rank	SOC Service	Description
 7️⃣	Compliance and Reporting Support	Generating security reports, maintaining audit trails, and helping meet frameworks like NIST, ISO 27001, PCI-DSS, HIPAA, GDPR, DPA
 
 8️⃣	Security Awareness & User Education	Providing phishing simulations, security training, and policy awareness to reduce human error and social engineering risks.
+
 
 
 
