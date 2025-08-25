@@ -55,19 +55,25 @@
 
 
  
- ### TASK1: Attack vs Defense First mindset:
+ ## TASK1: Understanding how an Infra is BUILT is a KEY mindset:
+ ### Learn the Sources of Forensic Evidence: Firewalls, Routers, Switches, APs, voice gateways, Servers: web,dns,sql,email, CRM, ERP:
+ ### Built your Info Gathering Infra:
+ 
+![CyberSecLab](https://github.com/user-attachments/assets/2e5b3698-63dc-4ebb-9507-26867b1f1e4b)
+
+
  Mininum is to learn these tools:
  
--Nmap
--Metasploit Framework
--Burp Suite
--Wireshark
--Aircrack -ng
--John the Ripper
--Hydra
--SQLmap
--Maltego
--Social Engineering Toolkit (SET)
+- Nmap
+- Metasploit Framework
+- Burp Suite
+- Wireshark
+- Aircrack -ng
+- John the Ripper
+- Hydra
+- SQLmap
+- Maltego
+- Social Engineering Toolkit (SET)
 
 ![image](https://github.com/user-attachments/assets/161c3c36-8583-4bad-8673-f8cfd8280984)
 
